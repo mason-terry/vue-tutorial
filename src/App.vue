@@ -1,8 +1,5 @@
 <template>
   <div class="app">
-    <a href='http://localhost:8080/#/'>Home</a>
-    <a href='http://localhost:8080/#/profile'>Profile</a>
-    <a href='http://localhost:8080/#/login'>Login</a>
     <router-view/>
   </div>
 </template>

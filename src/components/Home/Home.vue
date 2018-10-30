@@ -5,17 +5,13 @@
     <input type='text' id='text' />
     <button v-on:click='addItem'>Add</button>
     <ol>
-      <li v-for='item in list' v-if='item.done === false' v-bind:key='item'>{{ item.item }} <button v-on:click='item.done = true'>X</button></li>
+      <li v-for='item in list' v-if='item.done === false' v-bind:key='item'>{{ item.item }} <button v-on:click='itemComplete'>X</button></li>
     </ol>
   </div>
 </template>
 
 <script>
-let list = [
-  //{ item: 'Clean house', done: false },
-  //{ item: 'Get groceies', done: false },
-  //{ item: 'Walk dog', done: false }
-]
+let list = []
 
 export default {
   name: 'Home',
